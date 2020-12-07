@@ -1,0 +1,7 @@
+{
+  "name": "ionicLoginFB",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

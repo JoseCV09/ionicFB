@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Facebook Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+
+    <ion-button (click)="loginWithFacebook()">
+      <ion-icon slot="start" name="add"></ion-icon>
+      Sign In Facebook
+    </ion-button>
+
+  <ion-card *ngIf="userData">
+    <ion-card-header>
+      {{userData.username}}
+    </ion-card-header>
+    <img [src]="userData.picture">
+    <ion-card-content>
+      <h1>Email: {{userData.email}}</h1>
+      <h2>Name: {{userData.first_name}}</h2>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>
